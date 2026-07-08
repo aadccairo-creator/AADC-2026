@@ -1,33 +1,163 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ar">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<title>Markmap</title>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-}
-html {
-  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
-#mindmap {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-}
-.markmap-dark {
-  background: #27272a;
-  color: white;
-}
-</style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خصائص وتحديات تدريب لاعبات المسافات</title>
+    <script src="https://cdn.jsdelivr.net/npm/markmap-lib@0.18.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        #markmap-container {
+            width: 100%;
+            height: 600px;
+            background: #f8f9fa;
+        }
+        
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-<svg id="mindmap"></svg>
-<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:S,mm:Q}=window,$=new S.Toolbar;$.attach(Q);const I=$.render();I.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(I)})})()</script><script>((l,U,M,R)=>{const N=l();window.mm=N.Markmap.create("svg#mindmap",(U||N.deriveOptions)(R),M),window.matchMedia("(prefers-color-scheme: dark)").matches&&document.documentElement.classList.add("markmap-dark")})(()=>window.markmap,null,{"content":"&#x62e;&#x635;&#x627;&#x626;&#x635; &#x648;&#x62a;&#x62d;&#x62f;&#x64a;&#x627;&#x62a; &#x62a;&#x62f;&#x631;&#x64a;&#x628; &#x644;&#x627;&#x639;&#x628;&#x627;&#x62a; &#x627;&#x644;&#x645;&#x633;&#x627;&#x641;&#x627;&#x62a;","children":[{"content":"&#x62f;&#x648;&#x631; &#x627;&#x644;&#x645;&#x62f;&#x631;&#x628; &#x648;&#x623;&#x647;&#x645;&#x64a;&#x629; &#x627;&#x644;&#x639;&#x644;&#x648;&#x645;","children":[{"content":"&#x639;&#x64a;&#x646; &#x627;&#x644;&#x62e;&#x628;&#x631;&#x629; &#x648;&#x62a;&#x634;&#x62e;&#x64a;&#x635; &#x627;&#x644;&#x623;&#x62e;&#x637;&#x627;&#x621;","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"&#x627;&#x644;&#x625;&#x644;&#x645;&#x627;&#x645; &#x628;&#x627;&#x644;&#x628;&#x64a;&#x648;&#x645;&#x64a;&#x643;&#x627;&#x646;&#x64a;&#x643; &#x648;&#x627;&#x644;&#x643;&#x64a;&#x645;&#x64a;&#x627;&#x621; &#x627;&#x644;&#x62d;&#x64a;&#x648;&#x64a;&#x629;","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"&#x627;&#x644;&#x645;&#x62f;&#x631;&#x628; &#x627;&#x644;&#x645;&#x628;&#x62f;&#x639; &#x648;&#x627;&#x644;&#x645;&#x633;&#x62a;&#x642;&#x644;","children":[],"payload":{"tag":"li","lines":"5,6"}},{"content":"&#x641;&#x644;&#x633;&#x641;&#x629; &#x627;&#x644;&#x62a;&#x62f;&#x631;&#x64a;&#x628; &#x637;&#x648;&#x64a;&#x644;&#x629; &#x627;&#x644;&#x645;&#x62f;&#x649;","children":[],"payload":{"tag":"li","lines":"6,8"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"&#x627;&#x644;&#x62e;&#x635;&#x627;&#x626;&#x635; &#x627;&#x644;&#x645;&#x648;&#x631;&#x641;&#x648;&#x644;&#x648;&#x62c;&#x64a;&#x629; &#x648;&#x627;&#x644;&#x628;&#x64a;&#x648;&#x645;&#x64a;&#x643;&#x627;&#x646;&#x64a;&#x643;&#x64a;&#x629;","children":[{"content":"&#x632;&#x627;&#x648;&#x64a;&#x629; &#x643;&#x64a;&#x648; (Q-Angle)","children":[{"content":"&#x623;&#x648;&#x633;&#x639; &#x639;&#x646;&#x62f; &#x627;&#x644;&#x625;&#x646;&#x627;&#x62b;&#x200e; (14-20 &#x62f;&#x631;&#x62c;&#x629;)","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"&#x627;&#x644;&#x636;&#x63a;&#x637; &#x639;&#x644;&#x649; &#x627;&#x644;&#x631;&#x628;&#x627;&#x637; &#x627;&#x644;&#x635;&#x644;&#x64a;&#x628;&#x64a;","children":[],"payload":{"tag":"li","lines":"11,12"}}],"payload":{"tag":"li","lines":"9,12"}},{"content":"&#x62a;&#x631;&#x643;&#x64a;&#x628;&#x629; &#x627;&#x644;&#x62d;&#x648;&#x636;","children":[{"content":"&#x623;&#x643;&#x62b;&#x631; &#x627;&#x62a;&#x633;&#x627;&#x639;&#x627;&#x64b; &#x648;&#x639;&#x645;&#x642;&#x627;&#x64b; &#x644;&#x644;&#x625;&#x646;&#x62c;&#x627;&#x628;","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"&#x62a;&#x623;&#x62b;&#x64a;&#x631; &#x627;&#x644;&#x630;&#x628;&#x630;&#x628;&#x627;&#x62a; &#x627;&#x644;&#x62d;&#x631;&#x643;&#x64a;&#x629; &#x639;&#x644;&#x649; &#x627;&#x644;&#x62c;&#x631;&#x64a;","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"&#x645;&#x631;&#x643;&#x632; &#x62b;&#x642;&#x644; &#x623;&#x62e;&#x641;&#x636; (&#x62a;&#x648;&#x627;&#x632;&#x646; &#x623;&#x641;&#x636;&#x644;)","children":[],"payload":{"tag":"li","lines":"15,16"}}],"payload":{"tag":"li","lines":"12,16"}},{"content":"&#x627;&#x644;&#x627;&#x631;&#x62a;&#x62e;&#x627;&#x621; &#x627;&#x644;&#x627;&#x631;&#x62a;&#x628;&#x627;&#x637;&#x64a; &#x644;&#x644;&#x623;&#x631;&#x628;&#x637;&#x629;","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"&#x62a;&#x63a;&#x64a;&#x631; &#x627;&#x644;&#x62a;&#x642;&#x646;&#x64a;&#x643; &#x62e;&#x644;&#x627;&#x644; &#x645;&#x631;&#x627;&#x62d;&#x644; &#x627;&#x644;&#x646;&#x645;&#x648;","children":[],"payload":{"tag":"li","lines":"17,19"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"&#x627;&#x644;&#x62a;&#x648;&#x627;&#x632;&#x646; &#x627;&#x644;&#x639;&#x636;&#x644;&#x64a; &#x648;&#x62a;&#x645;&#x627;&#x631;&#x64a;&#x646; &#x627;&#x644;&#x62a;&#x635;&#x62d;&#x64a;&#x62d;","children":[{"content":"&#x645;&#x646;&#x638;&#x648;&#x645;&#x629; &#x627;&#x644;&#x639;&#x636;&#x644;&#x627;&#x62a; (System)","children":[{"content":"&#x62a;&#x623;&#x62b;&#x64a;&#x631; &#x627;&#x644;&#x62d;&#x648;&#x636; &#x639;&#x644;&#x649; &#x627;&#x644;&#x639;&#x645;&#x648;&#x62f; &#x627;&#x644;&#x641;&#x642;&#x631;&#x64a;","children":[],"payload":{"tag":"li","lines":"21,22"}},{"content":"&#x639;&#x644;&#x627;&#x642;&#x629; &#x627;&#x644;&#x623;&#x62c;&#x648;&#x646;&#x64a;&#x633;&#x62a; &#x648;&#x627;&#x644;&#x623;&#x646;&#x62a;&#x627;&#x63a;&#x648;&#x646;&#x64a;&#x633;&#x62a;","children":[],"payload":{"tag":"li","lines":"22,23"}}],"payload":{"tag":"li","lines":"20,23"}},{"content":"&#x627;&#x644;&#x639;&#x636;&#x644;&#x627;&#x62a; &#x627;&#x644;&#x623;&#x644;&#x64a;&#x648;&#x64a;&#x629; (&#x627;&#x644;&#x62c;&#x644;&#x648;&#x62a;&#x648;&#x633;)","children":[{"content":"&#x627;&#x644;&#x623;&#x644;&#x64a;&#x648;&#x64a;&#x629; &#x627;&#x644;&#x643;&#x628;&#x631;&#x649;: &#x627;&#x644;&#x645;&#x633;&#x624;&#x648;&#x644;&#x629; &#x639;&#x646; &#x627;&#x644;&#x62f;&#x641;&#x639;","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"&#x627;&#x644;&#x623;&#x644;&#x64a;&#x648;&#x64a;&#x629; &#x627;&#x644;&#x648;&#x633;&#x637;&#x649;: &#x62a;&#x62b;&#x628;&#x64a;&#x62a; &#x627;&#x644;&#x62d;&#x648;&#x636;","children":[],"payload":{"tag":"li","lines":"25,26"}},{"content":"&#x627;&#x644;&#x623;&#x644;&#x64a;&#x648;&#x64a;&#x629; &#x627;&#x644;&#x635;&#x63a;&#x631;&#x649;: &#x627;&#x644;&#x62a;&#x62f;&#x648;&#x64a;&#x631; &#x648;&#x627;&#x644;&#x62a;&#x62b;&#x628;&#x64a;&#x62a;","children":[],"payload":{"tag":"li","lines":"26,27"}}],"payload":{"tag":"li","lines":"23,27"}},{"content":"&#x627;&#x644;&#x62a;&#x645;&#x627;&#x631;&#x64a;&#x646; &#x627;&#x644;&#x645;&#x642;&#x62a;&#x631;&#x62d;&#x629;","children":[{"content":"&#x62a;&#x645;&#x631;&#x64a;&#x646; &#x627;&#x644;&#x635;&#x62f;&#x641;&#x629; (Clamshell)","children":[],"payload":{"tag":"li","lines":"28,29"}},{"content":"&#x647;&#x628;&#x648;&#x637; &#x627;&#x644;&#x62d;&#x648;&#x636; (Pelvic Drop)","children":[],"payload":{"tag":"li","lines":"29,30"}},{"content":"&#x627;&#x644;&#x645;&#x634;&#x64a; &#x627;&#x644;&#x62c;&#x627;&#x646;&#x628;&#x64a; &#x628;&#x634;&#x631;&#x64a;&#x637; &#x627;&#x644;&#x645;&#x642;&#x627;&#x648;&#x645;&#x629;","children":[],"payload":{"tag":"li","lines":"30,31"}},{"content":"&#x627;&#x644;&#x642;&#x631;&#x641;&#x635;&#x627;&#x621; &#x639;&#x644;&#x649; &#x631;&#x62c;&#x644; &#x648;&#x627;&#x62d;&#x62f;&#x629;","children":[],"payload":{"tag":"li","lines":"31,33"}}],"payload":{"tag":"li","lines":"27,33"}}],"payload":{"tag":"h2","lines":"19,20"}},{"content":"&#x627;&#x644;&#x62e;&#x635;&#x627;&#x626;&#x635; &#x627;&#x644;&#x641;&#x633;&#x64a;&#x648;&#x644;&#x648;&#x62c;&#x64a;&#x629; &#x648;&#x627;&#x644;&#x637;&#x627;&#x642;&#x629;","children":[{"content":"&#x627;&#x644;&#x62c;&#x647;&#x627;&#x632; &#x627;&#x644;&#x62f;&#x648;&#x631;&#x64a;","children":[{"content":"&#x62d;&#x62c;&#x645; &#x627;&#x644;&#x642;&#x644;&#x628; &#x623;&#x635;&#x63a;&#x631; &#x639;&#x646;&#x62f; &#x627;&#x644;&#x645;&#x631;&#x623;&#x629;","children":[],"payload":{"tag":"li","lines":"35,36"}},{"content":"&#x645;&#x639;&#x62f;&#x644; &#x636;&#x631;&#x628;&#x627;&#x62a; &#x642;&#x644;&#x628; &#x623;&#x639;&#x644;&#x649; &#x644;&#x644;&#x62a;&#x639;&#x648;&#x64a;&#x636;","children":[],"payload":{"tag":"li","lines":"36,37"}},{"content":"&#x646;&#x633;&#x628;&#x629; &#x647;&#x64a;&#x645;&#x648;&#x62c;&#x644;&#x648;&#x628;&#x64a;&#x646; &#x623;&#x642;&#x644;","children":[],"payload":{"tag":"li","lines":"37,38"}}],"payload":{"tag":"li","lines":"34,38"}},{"content":"&#x627;&#x644;&#x623;&#x644;&#x64a;&#x627;&#x641; &#x627;&#x644;&#x639;&#x636;&#x644;&#x64a;&#x629; &#x648;&#x627;&#x644;&#x62a;&#x645;&#x62b;&#x64a;&#x644; &#x627;&#x644;&#x63a;&#x630;&#x627;&#x626;&#x64a;","children":[{"content":"&#x646;&#x633;&#x628;&#x629; &#x623;&#x639;&#x644;&#x649; &#x645;&#x646; &#x627;&#x644;&#x623;&#x644;&#x64a;&#x627;&#x641; &#x627;&#x644;&#x628;&#x637;&#x64a;&#x626;&#x629;","children":[],"payload":{"tag":"li","lines":"39,40"}},{"content":"&#x627;&#x644;&#x627;&#x639;&#x62a;&#x645;&#x627;&#x62f; &#x627;&#x644;&#x623;&#x643;&#x628;&#x631; &#x639;&#x644;&#x649; &#x62d;&#x631;&#x643; &#x627;&#x644;&#x62f;&#x647;&#x648;&#x646;","children":[],"payload":{"tag":"li","lines":"40,41"}},{"content":"&#x62a;&#x648;&#x641;&#x64a;&#x631; &#x645;&#x62e;&#x632;&#x648;&#x646; &#x627;&#x644;&#x62c;&#x644;&#x627;&#x64a;&#x643;&#x648;&#x62c;&#x64a;&#x646;","children":[],"payload":{"tag":"li","lines":"41,42"}},{"content":"&#x62a;&#x623;&#x62e;&#x64a;&#x631; &#x627;&#x644;&#x62a;&#x639;&#x628; &#x641;&#x64a; &#x627;&#x644;&#x645;&#x633;&#x627;&#x641;&#x627;&#x62a; &#x627;&#x644;&#x637;&#x648;&#x64a;&#x644;&#x629;","children":[],"payload":{"tag":"li","lines":"42,44"}}],"payload":{"tag":"li","lines":"38,44"}}],"payload":{"tag":"h2","lines":"33,34"}},{"content":"&#x627;&#x644;&#x62f;&#x648;&#x631;&#x629; &#x627;&#x644;&#x634;&#x647;&#x631;&#x64a;&#x629; &#x648;&#x627;&#x644;&#x62d;&#x62f;&#x64a;&#x62b;","children":[{"content":"&#x645;&#x631;&#x627;&#x62d;&#x644; &#x627;&#x644;&#x62f;&#x648;&#x631;&#x629; &#x627;&#x644;&#x634;&#x647;&#x631;&#x64a;&#x629;","children":[{"content":"&#x641;&#x62a;&#x631;&#x629; &#x627;&#x644;&#x637;&#x645;&#x62b;: &#x62a;&#x62f;&#x631;&#x64a;&#x628; &#x62e;&#x641;&#x64a;&#x641;","children":[],"payload":{"tag":"li","lines":"46,47"}},{"content":"&#x627;&#x644;&#x637;&#x648;&#x631; &#x627;&#x644;&#x62c;&#x631;&#x64a;&#x628;&#x64a;: &#x62a;&#x631;&#x643;&#x64a;&#x632; &#x639;&#x644;&#x649; &#x627;&#x644;&#x633;&#x631;&#x639;&#x629; &#x648;&#x627;&#x644;&#x634;&#x62f;&#x629;","children":[],"payload":{"tag":"li","lines":"47,48"}},{"content":"&#x627;&#x644;&#x637;&#x648;&#x631; &#x627;&#x644;&#x644;&#x648;&#x62a;&#x64a;&#x646;&#x64a;: &#x62a;&#x631;&#x643;&#x64a;&#x632; &#x639;&#x644;&#x649; &#x627;&#x644;&#x62d;&#x62c;&#x645; &#x648;&#x627;&#x644;&#x62a;&#x62d;&#x645;&#x644;","children":[],"payload":{"tag":"li","lines":"48,49"}}],"payload":{"tag":"li","lines":"45,49"}},{"content":"&#x623;&#x647;&#x645;&#x64a;&#x629; &#x627;&#x644;&#x62d;&#x62f;&#x64a;&#x62b;","children":[{"content":"&#x646;&#x627;&#x642;&#x644; &#x623;&#x633;&#x627;&#x633;&#x64a; &#x644;&#x644;&#x623;&#x643;&#x633;&#x62c;&#x64a;&#x646;","children":[],"payload":{"tag":"li","lines":"50,51"}},{"content":"&#x645;&#x62e;&#x627;&#x632;&#x646; &#x627;&#x644;&#x62d;&#x62f;&#x64a;&#x62b; (&#x627;&#x644;&#x641;&#x631;&#x64a;&#x62a;&#x64a;&#x646; &#x648;&#x627;&#x644;&#x643;&#x628;&#x62f;)","children":[],"payload":{"tag":"li","lines":"51,52"}},{"content":"&#x627;&#x644;&#x645;&#x635;&#x627;&#x62f;&#x631; (&#x62d;&#x64a;&#x648;&#x627;&#x646;&#x64a;&#x629; &#x633;&#x631;&#x64a;&#x639;&#x629; &#x648;&#x646;&#x628;&#x627;&#x62a;&#x64a;&#x629; &#x628;&#x637;&#x64a;&#x626;&#x629;)","children":[],"payload":{"tag":"li","lines":"52,53"}},{"content":"&#x62a;&#x62c;&#x646;&#x628; &#x627;&#x644;&#x634;&#x627;&#x64a; &#x648;&#x627;&#x644;&#x642;&#x647;&#x648;&#x629; &#x623;&#x62b;&#x646;&#x627;&#x621; &#x627;&#x644;&#x648;&#x62c;&#x628;&#x627;&#x62a;","children":[],"payload":{"tag":"li","lines":"53,55"}}],"payload":{"tag":"li","lines":"49,55"}}],"payload":{"tag":"h2","lines":"44,45"}},{"content":"&#x645;&#x62a;&#x644;&#x627;&#x632;&#x645;&#x629; &#x646;&#x642;&#x635; &#x627;&#x644;&#x637;&#x627;&#x642;&#x629; &#x627;&#x644;&#x646;&#x633;&#x628;&#x64a;&#x629; (RED-S)","children":[{"content":"&#x645;&#x639;&#x627;&#x62f;&#x644;&#x629; &#x627;&#x644;&#x637;&#x627;&#x642;&#x629; &#x627;&#x644;&#x645;&#x62a;&#x627;&#x62d;&#x629;","children":[],"payload":{"tag":"li","lines":"56,57"}},{"content":"&#x647;&#x631;&#x645;&#x64a;&#x629; &#x627;&#x644;&#x628;&#x642;&#x627;&#x621; (&#x62a;&#x648;&#x641;&#x64a;&#x631; &#x627;&#x644;&#x637;&#x627;&#x642;&#x629; &#x644;&#x644;&#x62f;&#x645;&#x627;&#x63a; &#x648;&#x627;&#x644;&#x642;&#x644;&#x628; &#x623;&#x648;&#x644;&#x627;&#x64b;)","children":[],"payload":{"tag":"li","lines":"57,58"}},{"content":"&#x645;&#x62e;&#x627;&#x637;&#x631; &#x646;&#x642;&#x635; &#x627;&#x644;&#x637;&#x627;&#x642;&#x629;","children":[{"content":"&#x62a;&#x648;&#x642;&#x641; &#x627;&#x644;&#x646;&#x638;&#x627;&#x645; &#x627;&#x644;&#x647;&#x631;&#x645;&#x648;&#x646;&#x64a;","children":[],"payload":{"tag":"li","lines":"59,60"}},{"content":"&#x636;&#x639;&#x641; &#x62a;&#x631;&#x645;&#x64a;&#x645; &#x627;&#x644;&#x639;&#x638;&#x627;&#x645; &#x648;&#x627;&#x644;&#x643;&#x648;&#x644;&#x627;&#x62c;&#x64a;&#x646;","children":[],"payload":{"tag":"li","lines":"60,61"}},{"content":"&#x643;&#x633;&#x648;&#x631; &#x627;&#x644;&#x625;&#x62c;&#x647;&#x627;&#x62f; (Stress Fractures)","children":[],"payload":{"tag":"li","lines":"61,62"}},{"content":"&#x627;&#x646;&#x647;&#x64a;&#x627;&#x631; &#x627;&#x644;&#x635;&#x644;&#x627;&#x628;&#x629; &#x627;&#x644;&#x648;&#x62a;&#x631;&#x64a;&#x629; &#x627;&#x644;&#x639;&#x636;&#x644;&#x64a;&#x629;","children":[],"payload":{"tag":"li","lines":"62,63"}}],"payload":{"tag":"li","lines":"58,63"}},{"content":"&#x645;&#x624;&#x634;&#x631; &#x639;&#x62a;&#x628;&#x629; &#x627;&#x644;&#x625;&#x646;&#x630;&#x627;&#x631; (30 &#x633;&#x639;&#x631;/&#x643;&#x62c;&#x645;)","children":[],"payload":{"tag":"li","lines":"63,65"}}],"payload":{"tag":"h2","lines":"55,56"}},{"content":"&#x646;&#x635;&#x627;&#x626;&#x62d; &#x648;&#x627;&#x633;&#x62a;&#x631;&#x627;&#x62a;&#x64a;&#x62c;&#x64a;&#x627;&#x62a; &#x62a;&#x62f;&#x631;&#x64a;&#x628;&#x64a;&#x629;","children":[{"content":"&#x627;&#x644;&#x646;&#x627;&#x641;&#x630;&#x629; &#x627;&#x644;&#x623;&#x64a;&#x636;&#x64a;&#x629; (&#x627;&#x644;&#x623;&#x643;&#x644; &#x62e;&#x644;&#x627;&#x644; 30 &#x62f;&#x642;&#x64a;&#x642;&#x629; &#x628;&#x639;&#x62f; &#x627;&#x644;&#x62a;&#x645;&#x631;&#x64a;&#x646;)","children":[],"payload":{"tag":"li","lines":"66,67"}},{"content":"&#x623;&#x647;&#x645;&#x64a;&#x629; &#x627;&#x644;&#x646;&#x648;&#x645; &#x642;&#x628;&#x644; &#x627;&#x644;&#x633;&#x627;&#x639;&#x629; 10 (&#x625;&#x639;&#x627;&#x62f;&#x629; &#x627;&#x644;&#x628;&#x646;&#x627;&#x621;)","children":[],"payload":{"tag":"li","lines":"67,68"}},{"content":"&#x62a;&#x62c;&#x646;&#x628; &#x627;&#x644;&#x634;&#x62f;&#x629; &#x627;&#x644;&#x639;&#x627;&#x644;&#x64a;&#x629; &#x639;&#x644;&#x649; &#x645;&#x639;&#x62f;&#x629; &#x641;&#x627;&#x631;&#x63a;&#x629;","children":[],"payload":{"tag":"li","lines":"68,69"}},{"content":"&#x645;&#x631;&#x627;&#x642;&#x628;&#x629; &#x627;&#x644;&#x645;&#x624;&#x634;&#x631;&#x627;&#x62a; &#x627;&#x644;&#x645;&#x64a;&#x62f;&#x627;&#x646;&#x64a;&#x629; (&#x627;&#x644;&#x62f;&#x648;&#x631;&#x629;&#x60c; &#x627;&#x644;&#x646;&#x648;&#x645;&#x60c; &#x627;&#x644;&#x62a;&#x639;&#x628;)","children":[],"payload":{"tag":"li","lines":"69,70"}},{"content":"&#x62a;&#x648;&#x627;&#x632;&#x646; &#x627;&#x644;&#x642;&#x648;&#x629; &#x648;&#x627;&#x644;&#x645;&#x631;&#x648;&#x646;&#x629; (&#x627;&#x644;&#x627;&#x633;&#x62a;&#x64a;&#x633;&#x64a;&#x62a;&#x64a; &#x648;&#x627;&#x644;&#x643;&#x648;&#x646;&#x62a;&#x631;&#x627;&#x643;&#x62a;&#x64a;&#x628;&#x64a;&#x644;&#x64a;&#x62a;&#x64a;)","children":[],"payload":{"tag":"li","lines":"70,71"}}],"payload":{"tag":"h2","lines":"65,66"}}],"payload":{"tag":"h1","lines":"0,1"}},null)</script>
+    <div class="container">
+        <div class="header">
+            <h1>🏃‍♀️ خصائص وتحديات تدريب لاعبات المسافات</h1>
+            <p>خريطة ذهنية شاملة عن تدريب لاعبات المسافات الطويلة</p>
+        </div>
+        <div id="markmap-container"></div>
+    </div>
+
+    <script>
+        const markdownContent = `# خصائص وتحديات تدريب لاعبات المسافات
+
+## دور المدرب وأهمية العلوم
+- عين الخبرة وتشخيص الأخطاء
+- الإلمام بالبيوميكانيك والكيمياء الحيوية
+- المدرب المبدع والمستقل
+- فلسفة التدريب طويلة المدى
+
+## الخصائص المورفولوجية والبيوميكانيكية
+- زاوية كيو (Q-Angle)
+  - أوسع عند الإناث (14-20 درجة)
+  - الضغط على الرباط الصليبي
+- تركيبة الحوض
+  - أكثر اتساعاً وعمقاً للإنجاب
+  - تأثير الذبذبات الحركية على الجري
+  - مركز ثقل أخفض (توازن أفضل)
+- الارتخاء الارتباطي للأربطة
+- تغير التقنية خلال مراحل النمو
+
+## التوازن العضلي وتمارين التصحيح
+- منظومة العضلات (System)
+  - تأثير الحوض على العمود الفقري
+  - علاقة الأجونست والأنتاغونست
+- العضلات الألوية (الجلوتوس)
+  - الألوية الكبرى: المسؤولة عن الدفع
+  - الألوية الوسطى: تثبيت الحوض
+  - الألوية الصغرى: التدوير والتثبيت
+- التمارين المقترحة
+  - تمرين الصدفة (Clamshell)
+  - هبوط الحوض (Pelvic Drop)
+  - المشي الجانبي بشريط المقاومة
+  - القرفصاء على رجل واحدة
+
+## الخصائص الفسيولوجية والطاقة
+- الجهاز الدوري
+  - حجم القلب أصغر عند المرأة
+  - معدل ضربات قلب أعلى للتعويض
+  - نسبة هيموجلوبين أقل
+- الألياف العضلية والتمثيل الغذائي
+  - نسبة أعلى من الألياف البطيئة
+  - الاعتماد الأكبر على حرق الدهون
+  - توفير مخزون الجلايكوجين
+  - تأخير التعب في المسافات الطويلة
+
+## الدورة الشهرية والحديد
+- مراحل الدورة الشهرية
+  - فترة الطمث: تدريب خفيف
+  - الطور الجريبي: تركيز على السرعة والشدة
+  - الطور اللوتيني: تركيز على الحجم والتحمل
+- أهمية الحديد
+  - ناقل أساسي للأكسجين
+  - مخازن الحديد (الفريتين والكبد)
+  - المصادر (حيوانية سريعة ونباتية بطيئة)
+  - تجنب الشاي والقهوة أثناء الوجبات
+
+## متلازمة نقص الطاقة النسبية (RED-S)
+- معادلة الطاقة المتاحة
+- هرمية البقاء (توفير الطاقة للدماغ والقلب أولاً)
+- مخاطر نقص الطاقة
+  - توقف النظام الهرموني
+  - ضعف ترميم العظام والكولاجين
+  - كسور الإجهاد (Stress Fractures)
+  - انهيار الصلابة الوترية العضلية
+- مؤشر عتبة الإنذار (30 سعر/كجم)
+
+## نصائح واستراتيجيات تدريبية
+- النافذة الأيضية (الأكل خلال 30 دقيقة بعد التمرين)
+- أهمية النوم قبل الساعة 10 (إعادة البناء)
+- تجنب الشدة العالية على معدة فارغة
+- مراقبة المؤشرات الميدانية (الدورة، النوم، التعب)
+- توازن القوة والمرونة (الاستيسيتي والكونتراكتيليتي)`;
+
+        // Parse markdown to markmap
+        const { Markmap } = window;
+        const { Transformer } = window;
+        
+        const transformer = new Transformer();
+        const { root } = transformer.transform(markdownContent);
+        
+        const svg = document.querySelector('#markmap-container svg') || 
+                    document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        
+        if (!document.querySelector('#markmap-container svg')) {
+            document.getElementById('markmap-container').appendChild(svg);
+        }
+        
+        const mm = Markmap.create(svg, {}, root);
+    </script>
 </body>
 </html>
