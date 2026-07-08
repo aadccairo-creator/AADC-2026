@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>خصائص وتحديات تدريب لاعبات المسافات</title>
-    <script src="https://cdn.jsdelivr.net/npm/markmap-lib@0.18.12"></script>
-    <script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12"></script>
     <style>
         * {
             margin: 0;
@@ -17,47 +15,110 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             padding: 20px;
         }
         
         .container {
-            width: 100%;
             max-width: 1200px;
+            margin: 0 auto;
             background: white;
-            border-radius: 10px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
             overflow: hidden;
         }
         
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 30px;
+            padding: 40px;
             text-align: center;
         }
         
         .header h1 {
-            font-size: 28px;
+            font-size: 32px;
             margin-bottom: 10px;
+            font-weight: bold;
         }
         
         .header p {
-            font-size: 14px;
+            font-size: 16px;
             opacity: 0.9;
         }
         
-        #markmap-container {
-            width: 100%;
-            height: 600px;
-            background: #f8f9fa;
+        .content {
+            padding: 40px;
         }
         
-        svg {
-            width: 100%;
-            height: 100%;
+        .mindmap {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 20px;
+            border-bottom: 3px solid #764ba2;
+            padding-bottom: 10px;
+        }
+        
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .card li {
+            color: #333;
+            margin: 8px 0;
+            padding-right: 20px;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        .card li:before {
+            content: "▪";
+            color: #764ba2;
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+        }
+        
+        .card .subcategory {
+            color: #667eea;
+            font-weight: bold;
+            margin-top: 12px;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .card .sublist {
+            padding-right: 15px;
+            font-size: 13px;
+            color: #555;
+        }
+        
+        .card .sublist li:before {
+            content: "◦";
+        }
+        
+        .emoji {
+            font-size: 24px;
+            margin-left: 10px;
         }
     </style>
 </head>
@@ -67,97 +128,138 @@
             <h1>🏃‍♀️ خصائص وتحديات تدريب لاعبات المسافات</h1>
             <p>خريطة ذهنية شاملة عن تدريب لاعبات المسافات الطويلة</p>
         </div>
-        <div id="markmap-container"></div>
+        
+        <div class="content">
+            <div class="mindmap">
+                <!-- Card 1 -->
+                <div class="card">
+                    <h2><span class="emoji">👨‍🏫</span>دور المدرب وأهمية العلوم</h2>
+                    <ul>
+                        <li>عين الخبرة وتشخيص الأخطاء</li>
+                        <li>الإلمام بالبيوميكانيك والكيمياء الحيوية</li>
+                        <li>المدرب المبدع والمستقل</li>
+                        <li>فلسفة التدريب طويلة المدى</li>
+                    </ul>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="card">
+                    <h2><span class="emoji">💪</span>الخصائص المورفولوجية</h2>
+                    <ul>
+                        <li>زاوية كيو (Q-Angle)</li>
+                        <ul class="sublist">
+                            <li>أوسع عند الإناث (14-20 درجة)</li>
+                            <li>الضغط على الرباط الصليبي</li>
+                        </ul>
+                        <li class="subcategory">تركيبة الحوض</li>
+                        <ul class="sublist">
+                            <li>أكثر اتساعاً وعمقاً للإنجاب</li>
+                            <li>تأثير الذبذبات على الجري</li>
+                            <li>مركز ثقل أخفض (توازن أفضل)</li>
+                        </ul>
+                    </ul>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="card">
+                    <h2><span class="emoji">🦵</span>التوازن العضلي</h2>
+                    <ul>
+                        <li class="subcategory">منظومة العضلات</li>
+                        <ul class="sublist">
+                            <li>تأثير الحوض على العمود الفقري</li>
+                            <li>علاقة الأجونست والأنتاغونست</li>
+                        </ul>
+                        <li class="subcategory">العضلات الألوية</li>
+                        <ul class="sublist">
+                            <li>الكبرى: المسؤولة عن الدفع</li>
+                            <li>الوسطى: تثبيت الحوض</li>
+                            <li>الصغرى: التدوير والتثبيت</li>
+                        </ul>
+                    </ul>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="card">
+                    <h2><span class="emoji">🏋️‍♀️</span>التمارين المقترحة</h2>
+                    <ul>
+                        <li>تمرين الصدفة (Clamshell)</li>
+                        <li>هبوط الحوض (Pelvic Drop)</li>
+                        <li>المشي الجانبي بشريط المقاومة</li>
+                        <li>القرفصاء على رجل واحدة</li>
+                    </ul>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="card">
+                    <h2><span class="emoji">❤️</span>الخصائص الفسيولوجية</h2>
+                    <ul>
+                        <li class="subcategory">الجهاز الدوري</li>
+                        <ul class="sublist">
+                            <li>حجم القلب أصغر عند المرأة</li>
+                            <li>معدل ضربات أعلى للتعويض</li>
+                            <li>نسبة هيموجلوبين أقل</li>
+                        </ul>
+                    </ul>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="card">
+                    <h2><span class="emoji">⚡</span>الألياف العضلية والطاقة</h2>
+                    <ul>
+                        <li>نسبة أعلى من الألياف البطيئة</li>
+                        <li>الاعتماد الأكبر على حرق الدهون</li>
+                        <li>توفير مخزون الجلايكوجين</li>
+                        <li>تأخير التعب في المسافات الطويلة</li>
+                    </ul>
+                </div>
+                
+                <!-- Card 7 -->
+                <div class="card">
+                    <h2><span class="emoji">🔄</span>الدورة الشهرية والحديد</h2>
+                    <ul>
+                        <li class="subcategory">مراحل الدورة</li>
+                        <ul class="sublist">
+                            <li>فترة الطمث: تدريب خفيف</li>
+                            <li>الطور الجريبي: السرعة والشدة</li>
+                            <li>الطور اللوتيني: الحجم والتحمل</li>
+                        </ul>
+                        <li class="subcategory">مصادر الحديد</li>
+                        <ul class="sublist">
+                            <li>حيوانية سريعة الامتصاص</li>
+                            <li>نباتية بطيئة الامتصاص</li>
+                        </ul>
+                    </ul>
+                </div>
+                
+                <!-- Card 8 -->
+                <div class="card">
+                    <h2><span class="emoji">⚠️</span>متلازمة نقص الطاقة (RED-S)</h2>
+                    <ul>
+                        <li>معادلة الطاقة المتاحة</li>
+                        <li>هرمية البقاء (الدماغ والقلب أولاً)</li>
+                        <li class="subcategory">مخاطر نقص الطاقة</li>
+                        <ul class="sublist">
+                            <li>توقف النظام الهرموني</li>
+                            <li>ضعف ترميم العظام والكولاجين</li>
+                            <li>كسور الإجهاد (Stress Fractures)</li>
+                        </ul>
+                        <li>مؤشر الإنذار: 30 سعر/كجم</li>
+                    </ul>
+                </div>
+                
+                <!-- Card 9 -->
+                <div class="card">
+                    <h2><span class="emoji">💡</span>نصائح التدريب</h2>
+                    <ul>
+                        <li>النافذة الأيضية (30 دقيقة بعد التمرين)</li>
+                        <li>النوم قبل الساعة 10 (إعادة البناء)</li>
+                        <li>تجنب الشدة العالية على معدة فارغة</li>
+                        <li>مراقبة المؤشرات الميدانية</li>
+                        <li>توازن القوة والمرونة</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <script>
-        const markdownContent = `# خصائص وتحديات تدريب لاعبات المسافات
-
-## دور المدرب وأهمية العلوم
-- عين الخبرة وتشخيص الأخطاء
-- الإلمام بالبيوميكانيك والكيمياء الحيوية
-- المدرب المبدع والمستقل
-- فلسفة التدريب طويلة المدى
-
-## الخصائص المورفولوجية والبيوميكانيكية
-- زاوية كيو (Q-Angle)
-  - أوسع عند الإناث (14-20 درجة)
-  - الضغط على الرباط الصليبي
-- تركيبة الحوض
-  - أكثر اتساعاً وعمقاً للإنجاب
-  - تأثير الذبذبات الحركية على الجري
-  - مركز ثقل أخفض (توازن أفضل)
-- الارتخاء الارتباطي للأربطة
-- تغير التقنية خلال مراحل النمو
-
-## التوازن العضلي وتمارين التصحيح
-- منظومة العضلات (System)
-  - تأثير الحوض على العمود الفقري
-  - علاقة الأجونست والأنتاغونست
-- العضلات الألوية (الجلوتوس)
-  - الألوية الكبرى: المسؤولة عن الدفع
-  - الألوية الوسطى: تثبيت الحوض
-  - الألوية الصغرى: التدوير والتثبيت
-- التمارين المقترحة
-  - تمرين الصدفة (Clamshell)
-  - هبوط الحوض (Pelvic Drop)
-  - المشي الجانبي بشريط المقاومة
-  - القرفصاء على رجل واحدة
-
-## الخصائص الفسيولوجية والطاقة
-- الجهاز الدوري
-  - حجم القلب أصغر عند المرأة
-  - معدل ضربات قلب أعلى للتعويض
-  - نسبة هيموجلوبين أقل
-- الألياف العضلية والتمثيل الغذائي
-  - نسبة أعلى من الألياف البطيئة
-  - الاعتماد الأكبر على حرق الدهون
-  - توفير مخزون الجلايكوجين
-  - تأخير التعب في المسافات الطويلة
-
-## الدورة الشهرية والحديد
-- مراحل الدورة الشهرية
-  - فترة الطمث: تدريب خفيف
-  - الطور الجريبي: تركيز على السرعة والشدة
-  - الطور اللوتيني: تركيز على الحجم والتحمل
-- أهمية الحديد
-  - ناقل أساسي للأكسجين
-  - مخازن الحديد (الفريتين والكبد)
-  - المصادر (حيوانية سريعة ونباتية بطيئة)
-  - تجنب الشاي والقهوة أثناء الوجبات
-
-## متلازمة نقص الطاقة النسبية (RED-S)
-- معادلة الطاقة المتاحة
-- هرمية البقاء (توفير الطاقة للدماغ والقلب أولاً)
-- مخاطر نقص الطاقة
-  - توقف النظام الهرموني
-  - ضعف ترميم العظام والكولاجين
-  - كسور الإجهاد (Stress Fractures)
-  - انهيار الصلابة الوترية العضلية
-- مؤشر عتبة الإنذار (30 سعر/كجم)
-
-## نصائح واستراتيجيات تدريبية
-- النافذة الأيضية (الأكل خلال 30 دقيقة بعد التمرين)
-- أهمية النوم قبل الساعة 10 (إعادة البناء)
-- تجنب الشدة العالية على معدة فارغة
-- مراقبة المؤشرات الميدانية (الدورة، النوم، التعب)
-- توازن القوة والمرونة (الاستيسيتي والكونتراكتيليتي)`;
-
-        // Parse markdown to markmap
-        const { Markmap } = window;
-        const { Transformer } = window;
-        
-        const transformer = new Transformer();
-        const { root } = transformer.transform(markdownContent);
-        
-        const svg = document.querySelector('#markmap-container svg') || 
-                    document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-        
-        if (!document.querySelector('#markmap-container svg')) {
-            document.getElementById('markmap-container').appendChild(svg);
-        }
-        
-        const mm = Markmap.create(svg, {}, root);
-    </script>
 </body>
 </html>
